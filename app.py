@@ -121,5 +121,4 @@ def get_movie_with_cast(movie_id: int):
 
 
 if __name__ == "__main__":
-    print("Starting the app....")
     app.run(host="0.0.0.0", port="3000", debug=True)
