@@ -20,4 +20,16 @@ pipeline{
             }
         }
     }
+    post{
+        always{
+            echo 'This will always run'
+        }
+        success{
+            echo 'This will run if successful'
+        }
+        unstable{
+            echo 'This will run if pipeline is unstable'
+        }
+
+    }
 }
