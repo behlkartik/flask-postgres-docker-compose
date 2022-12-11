@@ -1,10 +1,10 @@
 pipeline{
-    agent any
+    agent { docker { image 'python:3.10.7-alpine' } }
     stages{
         stage("build"){
             steps{
             echo 'Building the application....'
-            sh 'pwd'
+            sh 'python --version'
             }
         }
         stage("test"){
